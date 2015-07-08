@@ -8,7 +8,7 @@ module Array2D =
     
 
 
-    let flatten (arr2D:'a[,]) =
+    let flatten (arr2D:'a[,]) : 'a [] =
         let arr = Array.zeroCreate  arr2D.Length
         let rec loop x y acc =
             if   x = arr2D.GetLength(0) then arr

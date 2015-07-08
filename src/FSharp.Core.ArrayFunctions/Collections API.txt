@@ -1,5 +1,5 @@
-﻿Array2D current
-===============
+﻿Array2D current - https://msdn.microsoft.com/en-us/library/ee353794.aspx
+========================================================================
 
 val base1           : array:'T [,] -> int
 val base2           : array:'T [,] -> int
@@ -22,87 +22,92 @@ val set             : array:'T [,] -> index1:int -> index2:int -> value:'T -> un
 val get             : array:'T [,] -> index1:int -> index2:int -> 'T
 
 
-F# 4.0 Collections API
-=======================
-append 		        o 	    o 	    o 	--- 	n/a
-average 		    o 	    o 	    o 	--- 	n/a
-averageBy 		    o 	    o 	    o 	--- 	n/a
+F# 4.0 Collections API - https://github.com/fsharp/FSharpLangDesign/blob/master/FSharp-4.0/ListSeqArrayAdditions.md
+===================================================================================================================
+
+append 		        o 	    o 	    o 	    --- 	n/a
+average 		    o 	    o 	    o 	    --- 	n/a
+averageBy 		    o 	    o 	    o 	    --- 	n/a
 contains 	        new 	ADD 	ADD 	ADD 	PR 	committed
-choose 		        o 	    o 	    o 	--- 	n/a
-chunkBySize 		ADD 	ADD 	ADD 	PR 	committed
-collect 		    o 	    o    	o 	--- 	n/a
-compareWith 		ADD 	ADD 	o 	PR 	committed
-concat 		        o 	    o 	    o 	--- 	n/a
-countBy 		    ADD 	ADD 	o 	PR 	committed
-distinct 		    ADD 	ADD 	o 	PR 	committed
-distinctBy 		    ADD 	ADD 	o 	PR 	committed
-splitInto 		    ADD 	ADD 	ADD 	PR 	committed
-empty 		        o 	    o 	    o 	--- 	n/a
-exactlyOne 	        ADD 	ADD 	o 	PR 	committed
-except 		        ADD 	ADD 	ADD 	PR 	committed
-exists 		        o 	    o 	    o 	--- 	n/a
-exists2 	    	o 	    o 	    o 	--- 	n/a
-filter 		        o 	    o 	    o 	--- 	n/a
-find 		        o 	    o 	    o 	--- 	n/a
+choose 		        o 	    o 	    o 	    --- 	n/a
+chunkBySize 		ADD 	ADD 	ADD 	PR 	    committed
+collect 		    o 	    o    	o 	    --- 	n/a
+compareWith 		ADD 	ADD 	o 	    PR 	    committed
+concat 		        o 	    o 	    o 	    --- 	n/a
+countBy 		    ADD 	ADD 	o 	    PR 	    committed
+distinct 		    ADD 	ADD 	o 	    PR 	    committed
+distinctBy 		    ADD 	ADD 	o 	    PR 	    committed
+splitInto 		    ADD 	ADD 	ADD 	PR 	    committed
+empty 		        o 	    o 	    o 	    --- 	n/a
+exactlyOne 	        ADD 	ADD 	o 	    PR 	    committed
+except 		        ADD 	ADD 	ADD 	PR 	    committed
+exists 		        o 	    o 	    o 	    --- 	n/a
+exists2 	    	o 	    o 	    o 	    --- 	n/a
+filter 		        o 	    o 	    o 	    --- 	n/a
+find 		        o 	    o 	    o 	    --- 	n/a
 findBack 	        new 	ADD 	ADD 	ADD 	PR 	committed
-findIndex 		    o 	    o 	    o 	--- 	n/a
+findIndex 		    o 	    o 	    o 	    --- 	n/a
 findIndexBack 	    new 	ADD 	ADD 	ADD 	PR 	committed
-fold 		        o 	    o 	    o 	--- 	n/a
-fold2 		        o 	    o 	    ADD 	PR 	committed
-foldBack 		    o 	    o 	    ADD 	PR 	committed
-foldBack2 		    o 	    o 	    ADD 	PR 	committed
-forall 		        o 	    o 	    o 	--- 	n/a
-forall2 		    o 	    o 	    o 	--- 	n/a
-groupBy 		    o 	    o 	    ADD 	PR 	committed
-head 		        o 	    ADD 	o 	PR 	committed
-indexed 	new, signature indexed: C<T> -> C<int*T> 	ADD 	ADD 	ADD 	PR 	committed
-init 		        o 	    o 	    o 	--- 	n/a
-isEmpty 		    o 	    o 	    o 	--- 	n/a
-item 	New, see note. Signature int -> C<'T> -> 'T 	ADD 	ADD 	ADD 	PR 	committed
-iter 		        o 	    o 	    o 	--- 	n/a
-iter2 		        o 	    o 	    o 	--- 	n/a
-iteri 		        o 	    o 	    o 	--- 	n/a
-iteri2 		        o 	    o 	    ADD 	PR 	committed
-last 		        ADD 	ADD 	o 	PR 	committed
-length 		        o 	    o 	    o 	--- 	n/a
-map 		        o 	    o 	    o 	--- 	n/a
-map2 		        o 	    o 	    o 	--- 	n/a
-map3 		        o 	    ADD 	ADD 	PR 	committed
-mapi 		        o 	    o 	    o 	--- 	n/a
-mapi2 		        o 	    o 	    ADD 	PR 	committed
-mapFold 	        New, map + fold, with signature mapFold : ('State -> 'T -> 'U * 'State) -> 'State -> C<'T> -> C<'U> * 'State e.g. see here 	ADD 	ADD 	ADD 	PR 	committed
-mapFoldBack 	    New, map + fold, with signature mapFoldBack : ('T -> 'State -> 'U * 'State) -> C<'T> -> 'State -> C<'U> * 'State 	ADD 	ADD 	ADD 	PR 	committed
-max 		        o 	    o 	    o 	--- 	n/a
-maxBy 		        o 	    o 	    o 	--- 	n/a
-min 		        o 	    o 	    o 	--- 	n/a
-minBy 		        o 	    o 	    o 	--- 	n/a
+fold 		        o 	    o 	    o 	    --- 	n/a
+fold2 		        o 	    o 	    ADD 	PR 	    committed
+foldBack 		    o 	    o 	    ADD 	PR 	    committed
+foldBack2 		    o 	    o 	    ADD 	PR 	    committed
+forall 		        o 	    o 	    o 	    --- 	n/a
+forall2 		    o 	    o 	    o 	    --- 	n/a
+groupBy 		    o 	    o 	    ADD 	PR 	    committed
+head 		        o 	    ADD 	o 	    PR 	    committed
+indexed 	new, signature indexed: C<T> -> C<int*T> 	
+                    ADD 	ADD 	ADD 	PR 	    committed
+init 		        o 	    o 	    o 	    --- 	n/a
+isEmpty 		    o 	    o 	    o 	    --- 	n/a
+item 	New, see note. Signature int -> C<'T> -> 'T 	
+                    ADD 	ADD 	ADD 	PR 	    committed
+iter 		        o 	    o 	    o 	    --- 	n/a
+iter2 		        o 	    o 	    o 	    --- 	n/a
+iteri 		        o 	    o 	    o 	    --- 	n/a
+iteri2 		        o 	    o 	    ADD 	PR 	    committed
+last 		        ADD 	ADD 	o 	    PR 	    committed
+length 		        o 	    o 	    o 	    --- 	n/a
+map 		        o 	    o 	    o 	    --- 	n/a
+map2 		        o 	    o 	    o 	    --- 	n/a
+map3 		        o 	    ADD 	ADD 	PR 	    committed
+mapi 		        o 	    o 	    o 	    --- 	n/a
+mapi2 		        o 	    o 	    ADD 	PR 	    committed
+mapFold 	        New, map + fold, with signature mapFold : ('State -> 'T -> 'U * 'State) -> 'State -> C<'T> -> C<'U> * 'State e.g. see here 	
+                    ADD 	ADD 	ADD 	PR 	    committed
+mapFoldBack 	    New, map + fold, with signature mapFoldBack : ('T -> 'State -> 'U * 'State) -> C<'T> -> 'State -> C<'U> * 'State 	
+                    ADD 	ADD 	ADD 	PR 	    committed
+max 		        o 	    o 	    o 	    --- 	n/a
+maxBy 		        o 	    o 	    o 	    --- 	n/a
+min 		        o 	    o 	    o 	    --- 	n/a
+minBy 		        o 	    o 	    o 	    --- 	n/a
 nth 	            see note 	long-term deprecate, see note 	o 	long-term deprecate, see note 	--- 	n/a
-pairwise 		    ADD 	ADD 	o 	    PR 	committed
-permute 		    o 	    o 	    ADD 	PR 	committed
-pick 		        o 	    o 	    o 	--- 	n/a
-reduce 		        o 	    o 	    o 	--- 	n/a
-reduceBack 		    o 	    o 	    ADD 	PR 	committed
-replicate 		    o 	    ADD 	ADD 	PR 	committed
-rev 		        o 	    o 	    ADD 	PR 	committed
-scan 		        o 	    o 	    o 	--- 	n/a
-scanBack 		    o 	    o 	    ADD 	PR 	committed
-singleton 		    ADD 	ADD 	o 	PR 	committed
-skip 		        ADD 	ADD 	o 	PR 	committed
-skipWhile 		    ADD 	ADD 	o 	PR 	committed
-sort 		        o 	    o 	    o 	--- 	n/a
-sortBy 		        o 	    o 	    o 	--- 	n/a
-sortWith 		    o 	    o 	    ADD 	PR 	committed
-sortDescending 		ADD 	ADD 	ADD 	PR 	committed
-sortByDescending 	ADD 	ADD 	ADD 	PR 	committed
-sum 		        o 	    o 	    o 	--- 	n/a
-sumBy 		        o 	    o 	    o 	--- 	n/a
-tail 		        o 	    ADD 	ADD 	PR 	committed
-take 		        ADD 	ADD 	o 	PR 	committed
-takeWhile 		    ADD 	ADD 	o 	PR 	committed
-truncate 		    ADD 	ADD 	o 	PR 	committed
-tryFind 		    o 	    o 	    o 	--- 	n/a
-tryFindBack 	    new     	    ADD 	ADD 	ADD 	PR 	committed
-tryFindIndex 		o 	    o 	    o 	--- 	n/a
+pairwise 		    ADD 	ADD 	o 	    PR 	    committed
+permute 		    o 	    o 	    ADD 	PR 	    committed
+pick 		        o 	    o 	    o 	--- 	    n/a
+reduce 		        o 	    o 	    o 	--- 	    n/a
+reduceBack 		    o 	    o 	    ADD 	PR 	    committed
+replicate 		    o 	    ADD 	ADD 	PR 	    committed
+rev 		        o 	    o 	    ADD 	PR 	    committed
+scan 		        o 	    o 	    o 	--- 	    n/a
+scanBack 		    o 	    o 	    ADD 	PR 	    committed
+singleton 		    ADD 	ADD 	o 	    PR 	    committed
+skip 		        ADD 	ADD 	o 	    PR 	    committed
+skipWhile 		    ADD 	ADD 	o 	    PR 	    committed
+sort 		        o 	    o 	    o 	    --- 	n/a
+sortBy 		        o 	    o 	    o 	    --- 	n/a
+sortWith 		    o 	    o 	    ADD 	PR 	    committed
+sortDescending 		ADD 	ADD 	ADD 	PR 	    committed
+sortByDescending 	ADD 	ADD 	ADD 	PR 	    committed
+sum 		        o 	    o 	    o 	--- 	    n/a
+sumBy 		        o 	    o 	    o 	--- 	    n/a
+tail 		        o 	    ADD 	ADD 	PR 	    committed
+take 		        ADD 	ADD 	o 	    PR 	    committed
+takeWhile 		    ADD 	ADD 	o 	    PR 	    committed
+truncate 		    ADD 	ADD 	o 	    PR 	    committed
+tryFind 		    o 	    o 	    o 	    --- 	n/a
+tryFindBack 	    new     	    ADD     ADD 	ADD 	PR 	committed
+tryFindIndex 		o 	    o 	    o 	    --- 	n/a
 tryFindIndexBack 	new 	ADD 	ADD 	ADD 	PR 	committed
 tryHead 	        new 	ADD 	ADD 	ADD 	PR 	committed
 tryItem 	        new 	ADD 	ADD 	ADD 	PR 	committed
