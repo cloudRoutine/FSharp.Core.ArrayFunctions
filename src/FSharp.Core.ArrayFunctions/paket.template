@@ -1,0 +1,23 @@
+type project
+owners
+    Jared Hester
+authors 
+    Jared Hester
+projectUrl
+    http://github.com/cloudroutine/FSharp.Core.ArrayFunctions
+iconUrl
+    https://raw.githubusercontent.com/cloudroutine/FSharp.Core.ArrayFunctions/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/cloudroutine/FSharp.Core.ArrayFunctions/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    FSharp F# Collections Arrays
+summary
+    Normalizes the collections API for multi-dimensional arrays
+description
+    Normalizes the collections API for multi-dimensional arrays
+
+
