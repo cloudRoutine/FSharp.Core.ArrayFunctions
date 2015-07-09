@@ -38,8 +38,8 @@
 | isEmpty          | None     |      |
 | item             | None     |      |
 | iter             | Core     |  ✓  |
-| iter2            | Chris    |      |
-| iteri            | None     |  ✓  |
+| iter2            | Chris    |  ✓  |
+| iteri            | Core     |  ✓  |
 | iteri2           | Chris    |  ✓  |
 | last             | None     |      |
 | length           | None     |  ✓  |
