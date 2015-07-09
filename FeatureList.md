@@ -1,4 +1,4 @@
-Feature List
+﻿Feature List
 ==================================
 | Function         | Assigned | Done |
 | ---------------- |:--------:|-----:|
@@ -34,19 +34,19 @@ Feature List
 | groupBy          | None     |      |
 | head             | None     |      |
 | indexed          | None     |      |
-| init             | None     |      |
+| init             | None     |  ✓  |
 | isEmpty          | None     |      |
 | item             | None     |      |
-| iter             | None     |      |
-| iter2            | None     |      |
-| iteri            | None     |      |
-| iteri2           | None     |      |
+| iter             | Core     |  ✓  |
+| iter2            | Chris    |      |
+| iteri            | None     |  ✓  |
+| iteri2           | Chris    |  ✓  |
 | last             | None     |      |
-| length           | None     |      |
-| map              | None     |      |
+| length           | None     |  ✓  |
+| map              | None     |  ✓  |
 | map2             | None     |      |
 | map3             | None     |      |
-| mapi             | None     |      |
+| mapi             | None     |  ✓  |
 | mapi2            | None     |      |
 | mapFold          | None     |      |
 | mapFoldBack      | None     |      |
