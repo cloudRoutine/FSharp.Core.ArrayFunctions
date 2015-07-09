@@ -1,3 +1,5 @@
+[ ] append
+
 ﻿Feature List
 ==================================
 | Function         | Assigned | Done |
@@ -34,8 +36,8 @@
 | groupBy          | None     |      |
 | head             | None     |      |
 | indexed          | None     |      |
-| init             | None     | [x]  |
-| isEmpty          | None     | [ ]  |
+| init             | None     |  ✓   |
+| isEmpty          | None     |      |
 | item             | None     |      |
 | iter             | Core     |  ✓  |
 | iter2            | Chris    |  ✓  |
