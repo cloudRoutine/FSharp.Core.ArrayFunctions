@@ -85,39 +85,11 @@ module Array2D =
 //    let revRows
 //    let revCols
     
-    let iter (iterFunc:'T->unit) (arr:'T[,]) : unit =
-        checkNonNull "2D array" arr
-        let len_x = arr.GetLength(0)
-        let len_y = arr.GetLength(1)
-        let rec loop x y =
-            if x = len_x then ()
-            elif y = len_y then loop (x+1) 0
-            else iterFunc(arr.[x,y])
-        loop 0 0
 
-//    let iter2_old ( iterFunc:'T1->'T2->unit ) 
-//              ( arr1:'T1[,] ) 
-//              ( arr2:'T2[,]) : unit =
-//        checkNonNull "2D array" arr1
-//        checkNonNull "2D array" arr2
-//        let len_x1 = arr1.GetLength(0)
-//        let len_x2 = arr2.GetLength(0)
-//        let len_y1 = arr1.GetLength(1)
-//        let len_y2 = arr2.GetLength(1)
-//        // No idea what this does but it might be interesting
-//        // let f = OptimizedClosures.FSharpFunc<_,_,_>.Adapt(iterFunc)
-//        if len_x1 <> len_x2 then invalidArg "array2D" "Arrays had different lengths"
-//        if len_y1 <> len_y2 then invalidArg "array2D" "Arrays had different lengths"
-//
-//        for i = 0 to len_x1 - 1 do
-//            for j = 0 to len_y1 - 1 do
-//                //f.Invoke(arr1.[i,j], arr2.[i,j])
-//                iterFunc arr1.[i,j] arr2.[i,j]
-//        ()
 
-    let iter2 ( iterFunc: 'T1 -> 'T2 -> unit )
-            ( arr1 : 'T1 [,] )
-            ( arr2 : 'T2 [,] ) : unit =
+    let iter2   ( iterFunc: 'T1 -> 'T2 -> unit )
+                ( arr1 : 'T1 [,] )
+                ( arr2 : 'T2 [,] ) : unit =
         checkNonNull "2D array" arr1
         checkNonNull "2D array" arr2
         let x1_len, x2_len = arr1.GetLength(0),arr2.GetLength(0)
