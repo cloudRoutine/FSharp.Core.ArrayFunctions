@@ -34,8 +34,8 @@
 | groupBy          | None     |      |
 | head             | None     |      |
 | indexed          | None     |      |
-| init             | None     |  ✓  |
-| isEmpty          | None     |      |
+| init             | None     | [x]  |
+| isEmpty          | None     | [ ]  |
 | item             | None     |      |
 | iter             | Core     |  ✓  |
 | iter2            | Chris    |  ✓  |
