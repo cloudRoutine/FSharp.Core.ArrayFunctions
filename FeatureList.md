@@ -2,7 +2,7 @@
 ==================================
 | Function         | Assigned | Done |
 | ---------------- |:--------:|-----:|
-| append           | None     |- [x] |     
+| append           | None     |      |     
 | average          | None     |      |
 | averageBy        | None     |      |
 | contains         | None     |      |
