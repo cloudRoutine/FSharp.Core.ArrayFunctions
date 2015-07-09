@@ -1,7 +1,3 @@
-- [ ] append
-- [x] average
-- 
-
 ﻿Feature List
 ==================================
 | Function         | Assigned | Done |
