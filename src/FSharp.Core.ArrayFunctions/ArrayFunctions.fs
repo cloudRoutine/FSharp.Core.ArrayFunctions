@@ -121,7 +121,7 @@ module Array2D =
             printfn "y: %A" y
             printfn "x1_len: %A" x1_len
             if x = x1_len then ()
-            if y = y1_len then recurse (x+1) 0 arr1 arr2
+            elif y = y1_len then recurse (x+1) 0 arr1 arr2
             else iterFunc x y arr1.[x,y] arr2.[x,y]
                  recurse x ( y+1 ) arr1 arr2
         recurse 0 0 arr1 arr2
