@@ -104,3 +104,24 @@ module Array2D =
             else iterFunc arr1.[x,y] arr2.[x,y]
                  recurse x (y+1) arr1 arr2
         recurse 0 0 arr1 arr2
+
+    let iteri2( iterFunc: int -> int -> 'T1 -> 'T2 -> unit )
+        ( arr1: 'T1 [,] )
+        ( arr2: 'T2 [,] ) : unit =
+        checkNonNull "2D array" arr1
+        checkNonNull "2D array" arr2
+        let x1_len, x2_len = arr1.GetLength(0),arr2.GetLength(0)
+        let y1_len, y2_len = arr1.GetLength(1), arr2.GetLength(1)
+        
+        if x1_len <> x2_len then invalidArg "array2D" "Arrays had different lengths"
+        if y1_len <> y2_len then invalidArg "array2D" "Arrays had different lengths"
+        
+        let rec recurse x y ( arr1: 'T1 [,] )( arr2:'T2[,] ) =
+            printfn "x: %A" x
+            printfn "y: %A" y
+            printfn "x1_len: %A" x1_len
+            if x = x1_len then ()
+            if y = y1_len then recurse (x+1) 0 arr1 arr2
+            else iterFunc x y arr1.[x,y] arr2.[x,y]
+                 recurse x ( y+1 ) arr1 arr2
+        recurse 0 0 arr1 arr2
