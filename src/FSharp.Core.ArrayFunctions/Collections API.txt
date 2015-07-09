@@ -1,4 +1,7 @@
-﻿Array2D current - https://msdn.microsoft.com/en-us/library/ee353794.aspx
+﻿F# Core Array Module - https://github.com/fsharp/fsharp/blob/master/src/fsharp/FSharp.Core/array.fs
+
+
+Array2D current - https://msdn.microsoft.com/en-us/library/ee353794.aspx
 ========================================================================
 
 val base1           : array:'T [,] -> int
@@ -24,7 +27,7 @@ val get             : array:'T [,] -> index1:int -> index2:int -> 'T
 
 F# 4.0 Collections API - https://github.com/fsharp/FSharpLangDesign/blob/master/FSharp-4.0/ListSeqArrayAdditions.md
 ===================================================================================================================
-
+                    LIST    ARRAY   SEQ     PR      STATUS
 append 		        o 	    o 	    o 	    --- 	n/a
 average 		    o 	    o 	    o 	    --- 	n/a
 averageBy 		    o 	    o 	    o 	    --- 	n/a

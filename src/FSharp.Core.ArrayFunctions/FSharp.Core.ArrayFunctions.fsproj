@@ -9,8 +9,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>FSharp.Core.ArrayFunctions</RootNamespace>
     <AssemblyName>FSharp.Core.ArrayFunctions</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
     <Name>FSharp.Core.ArrayFunctions</Name>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -35,21 +35,6 @@
     <DocumentationFile>.\bin\Release\FSharp.Core.ArrayFunctions.xml</DocumentationFile>
     <OtherFlags>--warnon:1182</OtherFlags>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ArrayFunctions.fs" />
-    <None Include="Script.fsx" />
-    <None Include="paket.references" />
-    <None Include="paket.template" />
-  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
@@ -74,4 +59,20 @@
   </Target>
   -->
   <Import Project="..\..\.paket\paket.targets" />
+  <ItemGroup>
+    <Compile Include="ArrayFunctions.fs" />
+    <None Include="Script.fsx" />
+    <None Include="paket.references" />
+    <None Include="paket.template" />
+    <Content Include="Collections API.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
 </Project>

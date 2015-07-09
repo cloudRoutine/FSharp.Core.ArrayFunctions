@@ -9,8 +9,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>FSharp.Core.ArrayFunctions.Tests</RootNamespace>
     <AssemblyName>FSharp.Core.ArrayFunctions.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
     <Name>FSharp.Core.ArrayFunctions.Tests</Name>
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -61,6 +61,9 @@
     <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="FsCheck">
+      <HintPath>..\..\packages\FsCheck\lib\net45\FsCheck.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
